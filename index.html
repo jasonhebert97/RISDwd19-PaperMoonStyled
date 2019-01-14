@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- - - - - - - - - - - - - - - - - - - - - - -
+- - HEAD  - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Stylizing 'It's Only a Paper Moon'">
+	<meta name="author" content="Jason Hebert">
+
+	<title>Stylizing Lyrics - Jason Hebert</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - -
+- - BODY  - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -->
+
+<body>
+
+	<!-- <header>
+		<h1>It's Only a Paper Moon</h1>
+	</header> -->
+
+	<!--
+
+		** ** ** USE TIMING ON SHEET MUSIC FOR ANIMATION TIMING ** ** **
+		> use variables for setting the "tempo" (https://www.w3schools.com/css/css3_variables.asp)
+		> use 120 bpm (2 beats per second)
+			> 1/4 note = 0.5s
+			> 1/2 note = 1s
+			> 3/4 note = 1.5s
+			> full note = 2s
+
+		TASKS:
+
+		*** create different scenes utilizing both illustrative (simple black & white)
+				line for landscapes (create using Illustrator with inspirations)
+					> black as background with white lines
+		*** have these elements lightly animated to create a sense of movement
+		*** use realistic elements sparingly with more movement to draw eye
+		*** split each verse into it's own section within main
+
+		**** have the focal element clickable making user move to next part
+
+		NOTES:
+		1. main palette as black and white with added elements of colors for drawing
+		attention
+			a. add color to elements with "if you believed in me"
+		2. different textured elements that move with the music (with the timing)
+		3. add lyrics to bottom that change (similar to a sing along)
+			a. use animation delays
+			b. reuse the same code for repeated verses
+
+		*** edit photos of barnum and bailey where they are the pigs or are out in
+				the places of those vulnerable to combat their problematic antics
+
+		*** penny arcade can be made using different shaped to resemble a pinball
+				ball machine where the penny is the pinball
+
+		-->
+
+	<!--
+				Say, it's only a paper moon
+					> have moon pop out and bounce over the words (only do this for this line)
+				Sailing over a cardboard sea
+					> move a cardboard sea come out from bottom pushing moon up
+				But it wouldn't be make-believe
+					> linger here
+					> ...
+				If you believed in me
+					> ...
+		-->
+
+
+	<section class="v1">
+		<div class="v1-l1 line">
+			<p><span>Say,</span>
+				<span>it's</span>
+				<span>only</span>
+				<span>a</span>
+				<span>paper</span>
+				<span>moon</span></p>
+			<img class="paper-moon" src="img/verse1/paper-moon.png" alt="Paper Moon" />
+		</div>
+		<div class="v1-l2n3 line">
+			<img class="cardboard-sea" src="img/verse1/cardboard-wave1-hand.png" alt="Cardboard Sea Foreground" />
+			<p class="v1-l2">Sailing over a cardboard sea</p>
+			<img class="cardboard-sea2" src="img/verse1/cardboard-wave2-hand.png" alt="Cardboard Sea Background" />
+		</div>
+		<p class="v1-l3">But it wouldn't be make believe</p>
+		<div class="v1-l4 line">
+			<p class="v1-believe-lyric">If you believed in me</p>
+		</div>
+	</section>
+	<!-- Yes, it's only a canvas sky> push moon and sea down while bringing in canvas sky from above
+			Hanging over a muslin tree
+			> bring up muslin trees into foreground
+			But it wouldn't be make-believe
+			> linger here
+			> ...
+			If you believed in me
+			> ...
+			-->
+	<section class="v2">
+
+		<img class="v2-frame" src="img/verse2/frame.png" alt="Canvas Sky Frame" />
+
+
+		<div class="canvas-sky-wrapper">
+
+
+			<div class="v2-line">
+				<p class="v2-canvas-lyric">Yes, it's only a canvas sky</p>
+			</div>
+
+			<div class="v2-grass-wrapper">
+				<img class="v2-grass" src="img/verse2/grass-hand.png" alt="Grass" />
+
+				<p class="v2-muslin-lyric">Hanging over a muslin tree</p>
+
+				<img id="muslin-tree" src="img/verse2/muslin-tree1.png" alt="First Muslin Tree" />
+
+				<div class="v2-line">
+					<p class="v2-make-believe-lyric">But it wouldn't be make believe</p>
+				</div>
+				<div class="v2-line2">
+					<p>If you believed in me</p>
+				</div>
+
+			</div>
+			<div class="v2-filler"></div>
+		</div>
+
+	</section>
+
+
+
+	<!--
+				Without your love
+					> bring in a heart that bounces on words
+				It's a honky tonk parade
+					> break the heart with some sort of rod from a parade
+				Without your love
+					> have all the elements work to create a pinball outline
+				It's a melody played in a penny arcade
+					> have penny bounce over words until reach end where shot up through
+						the pinball hole thing
+		-->
+	<section class="v3">
+		<img class="v3-parade" src="img/verse3/parade.png" alt="Parade" />
+		<div class="v3-l1n2">
+			<p class="v3-without-lyric1">Without your love</p>
+			<p class="v3-parade-lyric">It's a honky tonk parade</p>
+		</div>
+		</div>
+		<div class="v3-l3n4">
+			<p class="v3-without-lyric2">Without your love</p>
+			<p class="v3-penny-lyric">It's a melody played in a penny arcade</p>
+		</div>
+		<div class="v3-pinball-penny">
+			<img class="v3-pinball" src="img/verse3/pinball-machine.png" alt="Pinball Machine" />
+			<img class="v3-penny" src="img/verse3/penny.png" alt="Penny" />
+		</div>
+		</div>
+	</section>
+
+	<!--
+				It's a Barnum and Bailey world
+					> have these two emerge from somewhere (one from each side?)
+				Just as phony as it can be
+					> have some sort of animation transition that turns the original images
+						into the subversive, altered images
+				But it wouldn't be make-believe
+					> linger here
+					> ...
+				If you believed in me
+					> ...
+		-->
+	<section class="v4-l1n2">
+
+		<img class="v4-frame" src="img/verse4/bb-frame.png" alt="Barnum and Bailey Frame" />
+
+		<div class="bb-content-wrapper">
+
+			<p class="v4-barnum-lyric">It's a Barnum</p>
+
+			<img class="v4-bailey-img" src="img/verse4/left-boy.png" alt="Bailey Image" />
+			<img class="v4-barnum-img" src="img/verse4/right-guy.png" alt="Barnum Image" />
+
+			<p class="v4-bailey-lyric">and Bailey world</p>
+
+			<div class="v4-filler"></div>
+			<p class="v4-phony-lyric">Just as phony</p>
+
+			<img class="v4-circle-pig1" src="img/verse4/pig-circle1.png" alt="Pig in Circle" />
+			<img class="v4-circle-pig2" src="img/verse4/pig-circle2.png" alt="Another Pig in Circle" />
+
+			<p class="v4-can-be-lyric">as it can be</p>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="v4-l3n4">
+			<div class="line">
+				<p class="v4-l3">But it wouldn't be make believe</p>
+				<p class="v4-l4">If you believed in me</p>
+			</div>
+	</section>
+
+	<footer>
+		<img class="paper-moon-footer" src="img/verse1/paper-moon.png" alt="Paper Moon" />
+		<img class="ella-f" src="img/verse4/ella.png" alt="Ella Fitzgerald" />
+	</footer>
+
+</body>
+
+</html>
