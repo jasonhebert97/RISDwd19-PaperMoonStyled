@@ -152,7 +152,7 @@ div {
 .paper-moon {
 	margin: 10vh auto;
 	width: 40vw;
-	animation: hide 5.75s linear, fadeIn 2s 5.75s ease-in, spin 20s linear;
+	animation: hide 5.75s linear, fadeIn 2s 5.75s ease-in, spin 20s linear infinite;
 }
 
 /** VERSE 1 - LINE 2 & 3
